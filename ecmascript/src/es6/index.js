@@ -54,7 +54,6 @@ console.log(education);
 
 // var is global let is avaiable in the scope
 
-
 var x = 'b';
 x = 'a';
 
@@ -63,3 +62,53 @@ const a = 'b';
 a = 'a';
 
 console.log(a);
+
+
+let name = 'oscar';
+let age = 32;
+//es5
+obj ={name : name, age:age};
+//es6
+obj2 ={name, age};
+
+console.log(obj2);
+
+
+//arrow ( tat is an anonym function)
+const names = [
+    {name: 'Oscar', age:32},
+    {name : 'Jessica', age:27}
+];
+
+let listOfNames = anmes.map(function(item) {
+    console.log(item.name);
+});
+
+let listOfNames2 = names.map(item=> console.log(item.name));
+
+const listOfNames3 = (name,age,country) => {
+ // ...
+}
+const lisOfNames4 = name=> {
+//...
+}
+
+const square = num => num*num;
+
+//Promises
+const helloPromise = () =>{
+    return new Promise ((resolve, reject) =>{
+        if (true){
+            resolve('Hey!');
+        }
+        else{
+            reject('Ups!!!');
+        }
+    })
+};
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('Hola'))
+    .catch(error=> console.log(error));
+
