@@ -18,3 +18,6 @@ const anotherFunction = async (url_api) => {
 console.log('Before');
 anotherFunction(API);
 console.log('After');
+
+//You can manage exception with try catch
+//use babel/polify to make it more compatible

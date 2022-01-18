@@ -15,3 +15,5 @@ fetchData(API)
     })
     .catch(err => console.error(err));
 
+//a promise does not manage exceptions, 
+//you can use babel to make it work in newest or old explorers
